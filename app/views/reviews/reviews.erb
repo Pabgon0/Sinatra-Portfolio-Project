@@ -1,0 +1,7 @@
+<h1>Hello, <%= @user.username %>.</h1></br>
+<h2> Reviews </h2></br>
+
+<% Review.all.each do |i| %>
+  <p><%= review.game_title %></p></br>
+  <p><%= review.content %></p>
+<% end %>
