@@ -1,0 +1,14 @@
+<h2> Your game review. </h2></br>
+
+  Game Title: <%= @review.game_title %></br>
+  Review: <%= @review.content %></br></br></br>
+
+<form method="post" action="/reviews/<%= @review.id %>/delete">
+  <input type="hidden" name="_method" value="delete" />
+  <input type="submit" value="Delete Review" />
+</form>
+
+<form method="get" action="/reviews/<%= @review.id %>/edit">
+  <input type="hidden" name="_method" value="edit" />
+  <input type="submit" value="Edit Project">
+</form>
