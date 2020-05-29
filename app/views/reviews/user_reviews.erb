@@ -1,6 +1,20 @@
 <h1>Hello, <%= current_user.username %>.</h1></br>
-<a href="/reviews/new"> Create a review </a></br></br>
-<a href="/home">Homepage</a>
+
+<form method="get" action="/reviews/new">
+  <input type="hidden" name="_method" value="edit" />
+  <input type="submit" value="Create a review">
+</form></br>
+
+<form method="get" action="/reviews">
+  <input type="hidden" name="_method" value="edit" />
+  <input type="submit" value="View all reviews">
+</form></br>
+
+<form method="get" action="/home">
+  <input type="hidden" name="_method" value="edit" />
+  <input type="submit" value="Go Home">
+</form></br>
+
 <h2> Your game reviews </h2></br>
 
 <% current_user.reviews.each do |review| %>
@@ -8,4 +22,7 @@
   Review: <%= review.content %></br></br></br>
 <% end %>
 
-<a href="/logout"> Log Out </a>
+<form method="get" action="/logout">
+  <input type="hidden" name="_method" value="edit" />
+  <input type="submit" value="Log Out">
+</form>

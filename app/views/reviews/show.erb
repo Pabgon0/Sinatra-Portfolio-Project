@@ -6,9 +6,24 @@
 <form method="post" action="/reviews/<%= @review.id %>/delete">
   <input type="hidden" name="_method" value="delete" />
   <input type="submit" value="Delete Review" />
-</form>
+</form></br>
 
 <form method="get" action="/reviews/<%= @review.id %>/edit">
   <input type="hidden" name="_method" value="edit" />
-  <input type="submit" value="Edit Project">
+  <input type="submit" value="Edit Review">
+</form></br>
+
+<form method="get" action="/reviews/<%= current_user.slug %>/view_all">
+  <input type="hidden" name="_method" value="edit" />
+  <input type="submit" value="View your reviews">
+</form></br>
+
+<form method="get" action="/reviews">
+  <input type="hidden" name="_method" value="edit" />
+  <input type="submit" value="View all reviews">
+</form></br>
+
+<form method="get" action="/home">
+  <input type="hidden" name="_method" value="edit" />
+  <input type="submit" value="Go Home">
 </form>
