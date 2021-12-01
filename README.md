@@ -1,1 +1,1 @@
-This sinatra app, allows a user to make an account, choose to view revies of video games by other people, and create reviews of their own. They can also edit the reviews of theirs and see all of the reviews they've made.
+This sinatra app, allows a user to make an account, choose to view reviews of video games by other people, and create reviews of their own. They can also edit the reviews of theirs and see all of the reviews they've made.
